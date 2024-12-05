@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .calendar {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px; 
+  }
+  
+  .month {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .day {
+    padding: 20px;
+    font-size: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .day:hover {
+    transform: scale(1.5);
+    background-image: url(a057f57e3bb34d322c2aaabaf67a1176.jpg);
+    background-size: cover; 
+    background-position: center; 
+    color: transparent; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    z-index: 2;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .tooltip img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
